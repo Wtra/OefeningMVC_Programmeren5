@@ -1,0 +1,58 @@
+﻿@model OefeningMVC_Programmeren5.Models.Component
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Component</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Categore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Naam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Naam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkDatasheet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkDatasheet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aantal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aantal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AankoopPrijs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AankoopPrijs)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
